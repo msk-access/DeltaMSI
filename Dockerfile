@@ -30,6 +30,6 @@ ADD . /app
 
 RUN pip3 install --no-cache-dir --user pipenv \
   && cd /code \
-  && python3.9.7 -m pipenv install
+  && python3.9 -m pipenv install
 
 ENTRYPOINT ["python3", "-m", "pipenv", "run", "python", "deltamsi/app.py"]
